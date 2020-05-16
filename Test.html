@@ -33,6 +33,23 @@
     </div>
     <button onclick="x.count++">Кнопка</button>
 </div>
+<script type="text/javascript">
+      var x = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello',
+          title: 'Pff',
+          status: true,
+          count: 0
+        }
+      });
 
+      var element = new Vue({
+        el: '#task',
+        data: {
+          hasErrors: [false, true, true]
+        }
+      });
+    </script>
 </body>
 </html>
