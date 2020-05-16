@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+      .error {
+        color: red
+      }
+    </style>
+</head>
+<body>
+<div class="">
+    <div id="app" v-bind:title="count">
+        {{ message + ' ' +count }}
+        <h1 v-if="status">Свойство истина</h1>
+        <h1 v-else> Свойство ложь</h1>
+    </div>
+    <div v-bind:class="">
+
+    </div>
+    <div id="task">
+        <div :class="{ error: hasErrors[0] == true }">
+            Text 1
+        </div>
+        <div :class="{ error: hasErrors[1] == true }">
+            Text 2
+        </div>
+        <div  :class="{ error: hasErrors[2] == true }">
+            Text 3
+        </div>
+    </div>
+    <button onclick="x.count++">Кнопка</button>
+</div>
+
+</body>
+</html>
